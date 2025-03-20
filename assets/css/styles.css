@@ -1,0 +1,47 @@
+*, *::before,*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  position: relative;
+}
+
+.card-container {
+  display: flex;
+  max-width: 400px;
+  margin: 4rem auto;
+  border: 2px solid green;
+  /* overflow-x: hidden; */
+}
+
+.card {
+  flex: 1 0 100px;
+  transition: transform .3s ease-in;
+  /* height: 100dvh; */
+  aspect-ratio: 16 / 9;
+  background-color: rgb(206, 206, 206);
+  display: grid;
+  place-content: center;
+  font-size: 20px;
+  font-weight: bold;
+  position: relative;
+}
+
+.card img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  inset: 0;
+  object-fit: cover;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  /* position: absolute; */
+  bottom: 0;
+  z-index: 10;
+}
